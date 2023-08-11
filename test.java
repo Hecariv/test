@@ -7,19 +7,19 @@ private String parseMappingFile(final HttpServletRequest request, final Multipar
     }
 }
 
-private String test() {
-    return "this is a test";
-}
+//private String test() {
+//    return "this is a test";
+//}
 
 
 // this is just a comment
-// wrng cment 
-// this is another comment
+// wrong comment 
+
 
 private String hello() {
     return "hello";
 }
 
-public String getName(String name) {
-    returns name;
+public String getName(String firstName) {
+    returns firstName;
 }
