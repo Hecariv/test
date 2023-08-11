@@ -1,4 +1,7 @@
-private String parseMappingFile(final HttpServletRequest request, final MultipartFile mappingFile) throws FailureMappingExceptionC {
+
+// This method is important
+public String parseMappingFile(final HttpServletRequest request, final MultipartFile mappingFile) throws FailureMappingExceptionC 
+{
     if (!MediaType.APPLICATION_JSON_VALUE.equals(mappingFile.getContentType())) {
             final String errMsg = MessageFormatterUtil.format("The file '{}' is not a json file!", mappingFile.getOriginalFilename());
             throw new FailureMappingExceptionC(errMsg, getResourceUri(request));
