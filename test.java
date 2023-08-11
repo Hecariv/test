@@ -1,12 +1,9 @@
 private String parseMappingFile(final HttpServletRequest request, final MultipartFile mappingFile) throws FailureMappingExceptionC {
-    if (!MediaType.APPLICATION_JSON_VALUE.equals(mappingFile.getContentType())) {
-            final String errMsg = MessageFormatterUtil.format("The file '{}' is not a json file!", mappingFile.getOriginalFilename());
-            throw new FailureMappingExceptionC(errMsg, getResourceUri(request));
-    }
     try {
-        return new String(mappingFile.getBytes());
-    } catch (IOException e) {
-       throw new FailureMappingExceptionC(e, getResourceUri(request));
+            return new String(mappingFile.getBytes(), StandardCharsets.UTF_8);
+        } catch(IOException e) {
+            throw new FailureMappingExceptionC(e, getResourceUri(request));
+        }
     }
 }
 
