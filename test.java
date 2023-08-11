@@ -23,6 +23,6 @@ private String hello() {
     return "hello";
 }
 
-public String getName(String name) {
-    returns name;
+public String getName(String firstName) {
+    returns firstName;
 }
