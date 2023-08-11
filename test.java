@@ -1,3 +1,5 @@
+import keine Ahnung hahaha
+//This is a comment.
 private String parseMappingFile(final HttpServletRequest request, final MultipartFile mappingFile) throws FailureMappingExceptionC {
     try {
             return new String(mappingFile.getBytes(), StandardCharsets.UTF_8);
@@ -11,6 +13,7 @@ private String parseMappingFile(final HttpServletRequest request, final Multipar
 //    return "this is a test";
 //}
 
+// Another comment should be edited
 
 // this is just a comment
 // wrong comment 
