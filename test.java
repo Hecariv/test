@@ -10,9 +10,9 @@ private String parseMappingFile(final HttpServletRequest request, final Multipar
     }
 }
 
-private String test() {
-    return "this is a test";
-}
+//private String test() {
+//    return "this is a test";
+//}
 
 
 // this is just a comment
